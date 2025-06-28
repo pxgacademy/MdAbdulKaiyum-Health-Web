@@ -1,9 +1,10 @@
+import SectionContainer from "@/components/SectionContainer";
 import HealthyLifestyleLeft from "./HealthyLifestyleLeft";
 import HealthyLifestyleRight from "./HealthyLifestyleRight";
 
 const HealthyLifestyle = () => {
   return (
-    <section className="mt-20 container mx-auto">
+    <SectionContainer>
       <h2 className="text-4xl font-bangla font-bold flex items-center justify-center">
         স্বাস্থ্যকর লাইফস্টাইল
         <svg
@@ -20,7 +21,7 @@ const HealthyLifestyle = () => {
         <HealthyLifestyleLeft />
         <HealthyLifestyleRight />
       </div>
-    </section>
+    </SectionContainer>
   );
 };
 

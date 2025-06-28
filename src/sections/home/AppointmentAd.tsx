@@ -1,9 +1,10 @@
 import { Bookmark } from "lucide-react";
 import Button from "@/components/Button";
+import SectionContainer from "@/components/SectionContainer";
 
 const AppointmentAd = () => {
   return (
-    <section className="mt-20 container mx-auto shadow-lg rounded-2xl">
+    <SectionContainer className="shadow-lg rounded-2xl">
       <div className="lg:flex items-center justify-between px-4 sm:px-6 md:p-8 py-6">
         <div className="font-bangla">
           <h3 className="text-3xl md:text-4xl pb-2">
@@ -19,7 +20,7 @@ const AppointmentAd = () => {
           <Bookmark /> Book Appointment
         </Button>
       </div>
-    </section>
+    </SectionContainer>
   );
 };
 
