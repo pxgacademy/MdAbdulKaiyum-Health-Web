@@ -1,11 +1,12 @@
 import SectionContainer from "@/components/SectionContainer";
 import HealthyLifestyleLeft from "./HealthyLifestyleLeft";
 import HealthyLifestyleRight from "./HealthyLifestyleRight";
+import SectionTitle from "@/components/SectionTitle";
 
 const HealthyLifestyle = () => {
   return (
     <SectionContainer>
-      <h2 className="text-4xl font-bangla font-bold flex items-center justify-center">
+      <SectionTitle>
         স্বাস্থ্যকর লাইফস্টাইল
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -15,7 +16,7 @@ const HealthyLifestyle = () => {
         >
           <path d="M435-279h90v-156h156v-90H525v-156h-90v156H279v90h156v156ZM180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h600q24 0 42 18t18 42v600q0 24-18 42t-42 18H180Z"></path>
         </svg>
-      </h2>
+      </SectionTitle>
 
       <div className="mt-8 grid md:grid-cols-2">
         <HealthyLifestyleLeft />
