@@ -3,7 +3,6 @@
 import SectionContainer from "@/components/SectionContainer";
 import { servicesDemoData } from "./demoData";
 import ShortenByCharacters from "@/components/StringShortener";
-import Link from "next/link";
 import ServiceDetailsModal from "./ServiceDetailsModal";
 import SectionTitle from "./../../../components/SectionTitle";
 

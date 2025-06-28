@@ -11,7 +11,7 @@ const HappyHistory = () => {
       <SectionTitle>সুখী হওয়ার গল্প</SectionTitle>
       <Swiper className="mt-8 shadow-lg">
         {histories?.map((history, i) => (
-          <SwiperSlide>
+          <SwiperSlide key={i}>
             <div className="min-h-80 flex flex-col items-center justify-center text-center p-8 bg-base-200 rounded-2xl">
               <p className="italic font-bangla font-semibold text-lg">
                 {history.content}
