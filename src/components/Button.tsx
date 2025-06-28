@@ -23,7 +23,7 @@ const Button: React.FC<ButtonProps> = ({
   ...rest
 }) => {
   const baseStyles =
-    "inline-flex items-center justify-center font-medium rounded transition-all duration-300";
+    "inline-flex items-center justify-center font-medium rounded transition-all duration-300 cursor-pointer";
   const variants: Record<ButtonVariant, string> = {
     primary: "bg-blue-600 text-white hover:bg-blue-700 disabled:bg-blue-300",
     secondary: "bg-gray-600 text-white hover:bg-gray-700 disabled:bg-gray-300",
