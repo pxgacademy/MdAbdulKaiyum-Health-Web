@@ -2,6 +2,7 @@ import AppointmentAd from "@/sections/home/AppointmentAd";
 import HealthyLifestyle from "@/sections/home/healthyLifestyle/HealthyLifestyle";
 import OurServices from "@/sections/home/ourServices/OurServices";
 import SliderHomePage from "@/sections/home/SliderHomePage";
+import VideoSection from "@/sections/home/videoSection/VideoSection";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <HealthyLifestyle />
       <AppointmentAd />
       <OurServices />
+      <VideoSection />
       <div className="py-40" />
     </main>
   );
