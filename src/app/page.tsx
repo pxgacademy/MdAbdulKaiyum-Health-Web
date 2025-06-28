@@ -1,3 +1,9 @@
+import SliderHomePage from "@/sections/home/SliderHomePage";
+
 export default function Home() {
-  return <div></div>;
+  return (
+    <main>
+      <SliderHomePage />
+    </main>
+  );
 }
