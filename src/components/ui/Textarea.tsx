@@ -1,21 +1,21 @@
 import React from "react";
 
-export interface InputProps
-  extends React.InputHTMLAttributes<HTMLInputElement> {
+export interface TextareaProps
+  extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
   label?: string;
   error?: string;
   requiredIndicator?: boolean;
 }
 
-const Input = React.forwardRef<HTMLInputElement, InputProps>(
+const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
   ({ label, error, className = "", id, requiredIndicator, ...rest }, ref) => {
-    const inputId = id || rest.name;
+    const textareaId = id || rest.name;
 
     return (
       <div className="w-full">
         {label && (
           <label
-            htmlFor={inputId}
+            htmlFor={textareaId}
             className="block mb-1 text-sm font-medium text-gray-700"
           >
             {label}
@@ -23,11 +23,14 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           </label>
         )}
 
-        <input
-          id={inputId}
+        <textarea
+          id={textareaId}
           ref={ref}
-          className={`w-full px-4 py-2 text-sm border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 
-          ${error ? "border-red-500" : "border-gray-300"} ${className}`}
+          rows={4}
+          className={`w-full px-4 py-2 text-sm border rounded-md resize-none 
+            focus:outline-none focus:ring-2 focus:ring-blue-500 
+            ${error ? "border-red-500" : "border-gray-300"} 
+            ${className}`}
           {...rest}
         />
 
@@ -37,6 +40,6 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
   }
 );
 
-Input.displayName = "Input";
+Textarea.displayName = "Textarea";
 
-export default Input;
+export default Textarea;

@@ -1,7 +1,9 @@
 "use client";
 import SectionContainer from "@/components/SectionContainer";
 import SectionTitle from "@/components/SectionTitle";
+import Button from "@/components/ui/Button";
 import Input from "@/components/ui/Input";
+import Textarea from "@/components/ui/Textarea";
 import { SubmitHandler, useForm } from "react-hook-form";
 
 interface FormValues {
@@ -26,53 +28,72 @@ const SearchUs = () => {
     <SectionContainer>
       <SectionTitle>অনুসন্ধান করুন</SectionTitle>
 
-      <div>
-        <img
-          src="https://mdabdulkaiyum.in/assets/files/images/gifs/contact.gif"
-          alt=""
-        />
-      </div>
-
-      {
-        //
-      }
-      <div>
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <Input
-            label="নামঃ"
-            placeholder="আপনার নাম"
-            {...register("name", { required: "Name is required" })}
-            error={errors.name?.message}
+      <div className="flex items-center mt-4">
+        <div className="flex-1">
+          <img
+            src="https://mdabdulkaiyum.in/assets/files/images/gifs/contact.gif"
+            alt=""
           />
+        </div>
 
-          <Input
-            label="নাম্বারঃ"
-            placeholder="আপনার নাম্বার"
-            {...register("email", { required: "Email is required" })}
-            error={errors.email?.message}
-          />
-          <Input
-            label="ইমেইলঃ"
-            type="email"
-            placeholder="আপনার ইমেইল"
-            {...register("email", {
-              required: "Email is required",
-              pattern: {
-                value: /^\S+@\S+\.\S+$/,
-                message: "Enter a valid email",
-              },
-            })}
-            error={errors.email?.message}
-          />
+        {
+          //
+        }
+        <div className="flex-1 p-4 shadow">
+          <p className="text-center text-lg">ম্যাসেজ পাঠান</p>
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <Input
+              label="নামঃ"
+              placeholder="আপনার নাম"
+              requiredIndicator
+              {...register("name", { required: "নাম বাধ্যতামূলক দিতে হবে" })}
+              error={errors.name?.message}
+            />
 
-          <button
-            type="submit"
-            disabled={isSubmitting}
-            className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 disabled:opacity-50"
-          >
-            {isSubmitting ? "Submitting..." : "Submit"}
-          </button>
-        </form>
+            <div className="flex flex-col sm:flex-row gap-3 my-2">
+              <Input
+                label="নাম্বারঃ"
+                placeholder="আপনার নাম্বার"
+                requiredIndicator
+                {...register("phone", {
+                  required: "নাম্বার বাধ্যতামূলক দিতে হবে",
+                })}
+                error={errors.phone?.message}
+              />
+              <Input
+                label="ইমেইলঃ"
+                type="email"
+                placeholder="আপনার ইমেইল"
+                {...register("email", {
+                  required: false,
+                  pattern: {
+                    value: /^\S+@\S+\.\S+$/,
+                    message: "সঠিক ইমেইল দিন",
+                  },
+                })}
+                error={errors.email?.message}
+              />
+            </div>
+
+            <Textarea
+              label="ম্যাসেজ"
+              placeholder="আপনার ম্যাসেজ টাইপ করুন..."
+              requiredIndicator
+              {...register("message", {
+                required: "ম্যাসেজ বাধ্যতামূলক দিতে হবে",
+              })}
+              error={errors.message?.message}
+            />
+
+            <Button
+              type="submit"
+              disabled={isSubmitting}
+              className="w-full mt-5"
+            >
+              {isSubmitting ? "ম্যাসেজ যাচ্ছে..." : "ম্যাসেজ পাঠান"}
+            </Button>
+          </form>
+        </div>
       </div>
     </SectionContainer>
   );
