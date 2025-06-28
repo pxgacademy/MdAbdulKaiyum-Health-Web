@@ -1,5 +1,5 @@
 import { Bookmark } from "lucide-react";
-import Button from "@/components/Button";
+import Button from "@/components/ui/Button";
 import SectionContainer from "@/components/SectionContainer";
 
 const AppointmentAd = () => {

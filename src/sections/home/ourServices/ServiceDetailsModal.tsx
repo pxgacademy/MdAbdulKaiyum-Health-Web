@@ -1,6 +1,6 @@
 "use client";
 
-import Button from "@/components/Button";
+import Button from "@/components/ui/Button";
 import { X } from "lucide-react";
 import Link from "next/link";
 import React from "react";
