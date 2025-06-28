@@ -3,7 +3,7 @@ import HealthyLifestyleRight from "./HealthyLifestyleRight";
 
 const HealthyLifestyle = () => {
   return (
-    <section className="mt-20 container">
+    <section className="mt-20 container mx-auto">
       <h2 className="text-4xl font-bangla font-bold flex items-center justify-center">
         স্বাস্থ্যকর লাইফস্টাইল
         <svg

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const HealthyLifestyleRight = () => {
   return (
-    <div className="font-bangla shadow-lg p-5 space-y-1.5">
+    <div className="font-bangla shadow-lg p-5 space-y-1.5 border-2 border-gray-200 dark:border-gray-700 rounded-xl">
       <h2 className="text-5xl font-bold font-bangla text-gray-800/80 dark:text-gray-200">
         স্বাস্থ্যকর লাইফস্টাইল
       </h2>
