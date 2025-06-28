@@ -30,7 +30,7 @@ const FacebookPageEmbed = () => {
       data-href={process.env.NEXT_PUBLIC_FB_PAGE_LINK}
       data-tabs="timeline"
       data-width=""
-      data-height=""
+      data-height="100%"
       data-small-header="false"
       data-adapt-container-width="true"
       data-hide-cover="false"

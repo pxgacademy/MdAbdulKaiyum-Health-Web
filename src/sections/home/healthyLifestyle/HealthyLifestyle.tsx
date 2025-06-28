@@ -16,7 +16,7 @@ const HealthyLifestyle = () => {
         </svg>
       </h2>
 
-      <div className="mt-8 grid grid-cols-2">
+      <div className="mt-8 grid md:grid-cols-2">
         <HealthyLifestyleLeft />
         <HealthyLifestyleRight />
       </div>
