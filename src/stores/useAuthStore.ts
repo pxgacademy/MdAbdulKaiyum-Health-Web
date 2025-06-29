@@ -7,19 +7,25 @@ interface DemoUserSignin {
 }
 
 interface AuthState {
-  user: null | DemoUserSignin;
+  user: DemoUserSignin | null;
   authLoading: boolean;
+  demoUserSignin: (data: DemoUserSignin) => void;
+  demoUserSignout: () => void;
 }
 
 export const useAuthStore = create<AuthState>((set) => ({
   user: null,
   authLoading: false,
 
-  demoUserSignin: async (data: DemoUserSignin) => {
-    set({ user: data });
+  demoUserSignin: (data) => {
+    set({ authLoading: true });
+    // simulate async login
+    setTimeout(() => {
+      set({ user: data, authLoading: false });
+    }, 500);
   },
 
-  demoUserSignout: async () => {
+  demoUserSignout: () => {
     set({ user: null });
   },
 }));
