@@ -39,9 +39,14 @@ const Navbar = () => {
       } `}
     >
       {/* left side */}
-      <div>
+      <div className="relative w-full max-w-40 h-11">
         <Link href="/">
-          <Image src="/logo.png" alt="logo" className="max-w-40" />
+          <Image
+            src="/logo.png"
+            alt="logo"
+            fill
+            className="object-contain max-w-40"
+          />
         </Link>
       </div>
 
@@ -87,9 +92,16 @@ const Navbar = () => {
                 htmlFor="my-drawer-4"
                 className="py-4 border-b border-gray-300 dark:border-gray-600"
               >
-                <Link href="/">
-                  <Image src="/logo.png" alt="logo" className="max-w-40" />
-                </Link>
+                <div className="relative w-full max-w-40 h-11">
+                  <Link href="/">
+                    <Image
+                      src="/logo.png"
+                      alt="logo"
+                      fill
+                      className="object-contain max-w-40"
+                    />
+                  </Link>
+                </div>
               </label>
 
               {/* Sidebar content */}

@@ -32,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="bn" className="dark">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${notoBengali.variable} antialiased`}
       >

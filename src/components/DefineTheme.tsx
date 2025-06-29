@@ -15,7 +15,7 @@ const DefineTheme = () => {
     <button
       onClick={toggleTheme}
       aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
-      className="p-2 rounded"
+      className="p-2 rounded cursor-pointer"
     >
       {theme === "light" ? <Moon /> : <Sun />}
     </button>
