@@ -19,8 +19,8 @@ const LocationMap = () => {
       center={[23.8103, 90.4125]}
       zoom={15}
       scrollWheelZoom={true}
-      style={{ height: "450px", width: "100%" }}
-      className="rounded-xl shadow-lg"
+      //   style={{ height: "450px", width: "100%" }}
+      className="rounded-xl shadow-lg min-h-[450px] container mx-auto"
     >
       <TileLayer
         attribution='&copy; <a href="https://osm.org/copyright">OpenStreetMap</a>'

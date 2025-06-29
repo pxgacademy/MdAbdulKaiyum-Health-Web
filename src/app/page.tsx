@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/Footer";
 import LocationMap from "@/components/LocationMap";
 import AboutUs from "@/sections/home/AboutUs";
 import AppointmentAd from "@/sections/home/AppointmentAd";
@@ -22,6 +23,7 @@ export default function Home() {
       <BookAppointment />
       <SearchUs />
       <LocationMap />
+      <Footer />
 
       <div className="py-40" />
     </main>

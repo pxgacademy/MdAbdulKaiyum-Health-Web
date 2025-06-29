@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import DefineTheme from "../DefineTheme";
 import Button from "../ui/Button";
 import { useEffect, useState } from "react";
@@ -23,11 +22,10 @@ const navItems = [
 ];
 
 const Navbar = () => {
-  const pathname = usePathname() || "home";
-  const [show, setShow] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  const [show, setShow] = useState<boolean>(true);
+  const [lastScrollY, setLastScrollY] = useState<number>(0);
   const { user } = useAuthStore();
-  const [hash, setHash] = useState(window?.location?.hash || "home");
+  const [hash, setHash] = useState<string>("");
 
   const demoUser: DemoUser = user || {
     name: "demo name",
@@ -36,7 +34,8 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    setHash(window?.location?.hash);
+    if (window?.location?.hash) setHash(window?.location?.hash);
+    else setHash("");
   }, [window?.location?.hash]);
 
   useEffect(() => {

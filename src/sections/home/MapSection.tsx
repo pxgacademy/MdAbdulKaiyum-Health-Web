@@ -3,8 +3,7 @@ import SectionContainer from "@/components/SectionContainer";
 
 const MapSection = () => {
   return (
-    <SectionContainer className="p-6 border">
-      <h2 className="text-2xl font-bold">আমাদের লোকেশন</h2>
+    <SectionContainer className="border border-red-600">
       <LocationMap />
     </SectionContainer>
   );
