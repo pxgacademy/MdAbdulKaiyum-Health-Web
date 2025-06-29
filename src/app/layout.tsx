@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Noto_Sans_Bengali } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/navbar/Navbar";
 import ThemeProvider from "@/providers/ThemeProvider";
 import Footer from "@/components/footer/Footer";
+import ClientWrapper from "@/components/navbar/ClientWrapper";
 
 // English Fonts
 const geistSans = Geist({
@@ -38,7 +38,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${notoBengali.variable} antialiased`}
       >
         <ThemeProvider>
-          <Navbar />
+          <ClientWrapper />
           {children}
           <Footer />
         </ThemeProvider>
