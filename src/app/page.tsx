@@ -5,6 +5,7 @@ import AppointmentAd from "@/sections/home/AppointmentAd";
 import BookAppointment from "@/sections/home/BookAppointment";
 import HappyHistory from "@/sections/home/happyHistory/HappyHistory";
 import HealthyLifestyle from "@/sections/home/healthyLifestyle/HealthyLifestyle";
+import MapSection from "@/sections/home/MapSection";
 import OurServices from "@/sections/home/ourServices/OurServices";
 import SearchUs from "@/sections/home/SearchUs";
 import SliderHomePage from "@/sections/home/SliderHomePage";
@@ -22,6 +23,7 @@ export default function Home() {
       <AboutUs />
       <BookAppointment />
       <SearchUs />
+      <MapSection />
 
       <div className="py-40" />
     </main>
