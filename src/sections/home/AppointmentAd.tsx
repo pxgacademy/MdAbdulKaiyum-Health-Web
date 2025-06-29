@@ -1,3 +1,4 @@
+"use client";
 import { Bookmark } from "lucide-react";
 import SectionContainer from "@/components/SectionContainer";
 import Button from "@/components/ui/Button";
