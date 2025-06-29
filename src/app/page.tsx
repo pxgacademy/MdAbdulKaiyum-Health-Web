@@ -24,8 +24,6 @@ export default function Home() {
       <BookAppointment />
       <SearchUs />
       <MapSection />
-
-      <div className="py-40" />
     </main>
   );
 }

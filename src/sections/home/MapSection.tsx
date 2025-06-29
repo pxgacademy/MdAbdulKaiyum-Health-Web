@@ -1,7 +1,11 @@
 "use client";
 
-import LocationMap from "@/components/LocationMap";
 import SectionContainer from "@/components/SectionContainer";
+import dynamic from "next/dynamic";
+
+const LocationMap = dynamic(() => import("../../components/LocationMap"), {
+  ssr: false,
+});
 
 const MapSection = () => {
   return (
