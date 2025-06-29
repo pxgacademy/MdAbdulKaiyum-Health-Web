@@ -2,6 +2,7 @@
 import { Bookmark } from "lucide-react";
 import SectionContainer from "@/components/SectionContainer";
 import Button from "@/components/ui/Button";
+import Link from "next/link";
 
 const AppointmentAd = () => {
   return (
@@ -17,9 +18,11 @@ const AppointmentAd = () => {
           </p>
         </div>
 
-        <Button className="min-w-48 mt-5 lg:mt-0 flex items-center gap-x-2 hover:bg-red-500 hover:scale-110">
-          <Bookmark /> Book Appointment
-        </Button>
+        <Link href="/appointment">
+          <Button className="min-w-48 mt-5 lg:mt-0 flex items-center gap-x-2 hover:bg-red-500 hover:scale-110">
+            <Bookmark /> Book Appointment
+          </Button>
+        </Link>
       </div>
     </SectionContainer>
   );

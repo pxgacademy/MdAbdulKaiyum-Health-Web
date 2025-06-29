@@ -2,6 +2,7 @@
 
 import Button from "@/components/ui/Button";
 import { Bookmark } from "lucide-react";
+import Link from "next/link";
 
 const BookAppointment = () => {
   return (
@@ -15,9 +16,11 @@ const BookAppointment = () => {
         <h3 className="text-xl md:text-3xl font-bold mb-4 text-white">
           চিকিৎসার জন্য নাম লেখাতে আজ‌ই অ্যাপয়েন্টমেন্ট বুক করুন
         </h3>
-        <Button className="min-w-48 mt-3 md:mt-5 lg:mt-0 flex items-center gap-x-2 hover:bg-red-500 hover:scale-110">
-          <Bookmark /> Book Appointment
-        </Button>
+        <Link href="/appointment">
+          <Button className="min-w-48 mt-3 md:mt-5 lg:mt-0 flex items-center gap-x-2 hover:bg-red-500 hover:scale-110">
+            <Bookmark /> Book Appointment
+          </Button>
+        </Link>
       </div>
     </section>
   );

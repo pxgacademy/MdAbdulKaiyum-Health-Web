@@ -29,7 +29,7 @@ const NavButtons = () => {
 
   return (
     <>
-      <Link href="#">
+      <Link href="/appointment">
         <Button size="sm">বুক অ্যাপয়েন্টমেন্ট</Button>
       </Link>
       <Link href="#">
