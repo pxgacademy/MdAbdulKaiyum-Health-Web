@@ -9,7 +9,7 @@ const Footer = () => {
         {/* Left side footer */}
         <div className="flex-1">
           <Link href="/">
-            <img className="max-w-40 md:max-w-60" src="/logo.png" alt="" />
+            <img className="max-w-40 md:max-w-60" src="/logo.png" alt="logo" />
           </Link>
           <p className="md:max-w-60 mt-2.5 text-justify">
             পীস লাইব্রেরী মূলত এটি একটি সংস্থা, ঔষধকে খাদ্য হিসেবে নয়, বরং
@@ -56,14 +56,14 @@ const Footer = () => {
               <div>
                 <p>ফোন:</p>
                 <p className="flex items-center gap-x-1.5">
-                  <img className="size-5" src="/svg/call.svg" alt="" />
+                  <img className="size-5" src="/svg/call.svg" alt="svg" />
                   {"+91 9732 624 907"}
                 </p>
               </div>
               <div>
                 <p>হোয়াটসঅ্যাপ:</p>
                 <p className="flex items-center gap-x-1.5">
-                  <img className="size-5" src="/svg/wp.svg" alt="" />
+                  <img className="size-5" src="/svg/wp.svg" alt="svg" />
                   {"+91 9732 624 907"}
                 </p>
               </div>
@@ -88,7 +88,7 @@ const Footer = () => {
           </p>
 
           <Link href="https://www.facebook.com/mdabdulkaiyumpeacelibrary">
-            <img className="size-4" src="/svg/fb.svg" alt="" />
+            <img className="size-4" src="/svg/fb.svg" alt="svg" />
           </Link>
         </aside>
       </div>

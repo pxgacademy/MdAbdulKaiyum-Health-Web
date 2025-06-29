@@ -7,7 +7,7 @@ import "leaflet/dist/leaflet.css";
 
 const LocationMap = () => {
   useEffect(() => {
-    // Fix default icon
+    // eslint-disable-next-line
     delete (L.Icon.Default.prototype as unknown as { _getIconUrl?: any })
       ._getIconUrl;
     L.Icon.Default.mergeOptions({

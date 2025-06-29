@@ -43,7 +43,7 @@ const Navbar = () => {
       {/* left side */}
       <div>
         <Link href="/">
-          <img className="max-w-40" src="/logo.png" alt="" />
+          <img className="max-w-40" src="/logo.png" alt="logo" />
         </Link>
       </div>
 
@@ -90,7 +90,7 @@ const Navbar = () => {
                 className="py-4 border-b border-gray-300 dark:border-gray-600"
               >
                 <Link href="/">
-                  <img className="max-w-40" src="/logo.png" alt="" />
+                  <img className="max-w-40" src="/logo.png" alt="logo" />
                 </Link>
               </label>
 

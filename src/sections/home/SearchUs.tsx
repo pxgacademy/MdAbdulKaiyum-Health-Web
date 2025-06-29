@@ -32,7 +32,7 @@ const SearchUs = () => {
         <div className="flex-1">
           <img
             src="https://mdabdulkaiyum.in/assets/files/images/gifs/contact.gif"
-            alt=""
+            alt="gip"
           />
         </div>
 

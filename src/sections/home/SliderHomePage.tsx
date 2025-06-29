@@ -7,7 +7,7 @@ import { Carousel } from "react-responsive-carousel";
 const SliderHomePage = () => {
   return (
     <section className="pt-20" id="home">
-      <img src="/slider/banner.jpg" />
+      <img src="/slider/banner.jpg" alt="banner" />
       <Carousel
         autoPlay={true}
         infiniteLoop={true}
@@ -17,13 +17,13 @@ const SliderHomePage = () => {
         showStatus={false}
       >
         <div>
-          <img src="/slider/slider-img-1.jpg" />
+          <img src="/slider/slider-img-1.jpg" alt="slider img" />
         </div>
         <div>
-          <img src="/slider/slider-img-2.jpg" />
+          <img src="/slider/slider-img-2.jpg" alt="slider img" />
         </div>
         <div>
-          <img src="/slider/slider-img-3.jpg" />
+          <img src="/slider/slider-img-3.jpg" alt="slider img" />
         </div>
       </Carousel>
     </section>
