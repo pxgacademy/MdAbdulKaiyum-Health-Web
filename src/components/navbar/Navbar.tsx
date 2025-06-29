@@ -2,14 +2,15 @@
 
 import Link from "next/link";
 import DefineTheme from "../DefineTheme";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import NavButtons, { navItems } from "./NavButtons";
 import { Menu } from "lucide-react";
 
 const Navbar = () => {
-  const [show, setShow] = useState<boolean>(true);
-  const [lastScrollY, setLastScrollY] = useState<number>(0);
+  // const [show, setShow] = useState<boolean>(true);
+  // const [lastScrollY, setLastScrollY] = useState<number>(0);
 
+  /*
   useEffect(() => {
     const controlNavbar = () => {
       if (typeof window === "undefined") return;
@@ -31,11 +32,13 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", controlNavbar);
   }, [lastScrollY]);
 
+  */
+
+  // ${show ? "translate-y-0" : "-translate-y-full"}
+
   return (
     <nav
-      className={`flex items-center justify-between flex-wrap gap-3 fixed top-0 left-0 w-full py-3 px-4 sm:px-6 md:px-8 transition-transform duration-300 z-50 bg-base-300/80 backdrop-blur-md  ${
-        show ? "translate-y-0" : "-translate-y-full"
-      }`}
+      className={`flex items-center justify-between flex-wrap gap-3 fixed top-0 left-0 w-full py-3 px-4 sm:px-6 md:px-8 transition-transform duration-300 z-50 bg-base-300/80 backdrop-blur-md  `}
     >
       {/* left side */}
       <div>
