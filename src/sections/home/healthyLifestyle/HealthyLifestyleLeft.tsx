@@ -1,4 +1,4 @@
-import FacebookPageEmbed from "@/components/FacebookPageEmbed";
+// import FacebookPageEmbed from "@/components/FacebookPageEmbed";
 
 const HealthyLifestyleLeft = () => {
   return (
