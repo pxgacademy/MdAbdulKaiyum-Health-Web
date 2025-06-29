@@ -28,7 +28,7 @@ const SearchUs = () => {
     <SectionContainer>
       <SectionTitle>অনুসন্ধান করুন</SectionTitle>
 
-      <div className="flex items-center mt-4">
+      <div className=" me:flex items-center mt-4">
         <div className="flex-1">
           <img
             src="https://mdabdulkaiyum.in/assets/files/images/gifs/contact.gif"
@@ -36,9 +36,7 @@ const SearchUs = () => {
           />
         </div>
 
-        {
-          //
-        }
+        {/* form */}
         <div className="flex-1 p-4 shadow">
           <p className="text-center text-lg">ম্যাসেজ পাঠান</p>
           <form onSubmit={handleSubmit(onSubmit)}>

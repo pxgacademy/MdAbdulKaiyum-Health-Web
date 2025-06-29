@@ -5,13 +5,13 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer>
-      <SectionContainer className="font-bangla flex">
+      <SectionContainer className="font-bangla md:flex">
         {/* Left side footer */}
         <div className="flex-1">
           <Link href="/">
             <img className="max-w-40 md:max-w-60" src="/logo.png" alt="" />
           </Link>
-          <p className="max-w-60 mt-2.5 text-justify">
+          <p className="md:max-w-60 mt-2.5 text-justify">
             পীস লাইব্রেরী মূলত এটি একটি সংস্থা, ঔষধকে খাদ্য হিসেবে নয়, বরং
             খাদ্যকেই ঔষধ হিসেবে গ্রহণ করুন। এই স্লোগান নিয়ে আমাদের স্বাস্থ্যকর
             লাইফ স্টাইল এগিয়ে নিয়ে যাওয়ার চেষ্টা করছি।
@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
 
         {/* Right side footer */}
-        <div className="flex-1 flex justify-between">
+        <div className="flex-1 space-y-3 sm:space-y-0 sm:flex justify-between mt-5 md:mt-0">
           {/* ঠিকানা */}
           <div className="flex-1">
             <h6 className="text-xl font-semibold mb-2.5">ঠিকানা</h6>

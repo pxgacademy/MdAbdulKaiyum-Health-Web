@@ -5,7 +5,7 @@ const AboutUs = () => {
     <section className="mt-20" id="about_us">
       <SectionTitle>আমাদের সম্পর্কে</SectionTitle>
 
-      <div className="md:w-1/2 mx-auto mt-8">
+      <div className="w-full md:w-1/2 mx-auto mt-8 px-4 md:px-0">
         <img src="/about_us.jpg" alt="about us" />
         <p className="font-bangla text-justify mt-3 p-2.5 shadow-md">
           ### Peace Library Diabetes Centre: প্রকৃতির সুরে সুস্থতার আহ্বান

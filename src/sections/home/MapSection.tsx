@@ -3,9 +3,12 @@ import SectionContainer from "@/components/SectionContainer";
 
 const MapSection = () => {
   return (
-    <SectionContainer className="border border-red-600">
-      <LocationMap />
-    </SectionContainer>
+    <>
+      <div className="mt-10" />
+      <SectionContainer className="border border-red-600">
+        <LocationMap />
+      </SectionContainer>
+    </>
   );
 };
 

@@ -36,7 +36,7 @@ const videos = [
 
 const VideoSection = () => {
   return (
-    <SectionContainer className="grid grid-cols-2 gap-5">
+    <SectionContainer className="grid grid-cols-1 sm:grid-cols-2 gap-5">
       {videos.map((video) => (
         <VideoC key={video.id} videoId={video.id} title={video.title} />
       ))}
