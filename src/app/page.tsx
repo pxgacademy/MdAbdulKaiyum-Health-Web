@@ -1,3 +1,4 @@
+"use client";
 import LocationMap from "@/components/LocationMap";
 import AboutUs from "@/sections/home/AboutUs";
 import AppointmentAd from "@/sections/home/AppointmentAd";
