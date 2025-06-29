@@ -1,5 +1,6 @@
 "use client";
 
+import AboutUs from "@/sections/home/AboutUs";
 import AppointmentAd from "@/sections/home/AppointmentAd";
 import HappyHistory from "@/sections/home/happyHistory/HappyHistory";
 import HealthyLifestyle from "@/sections/home/healthyLifestyle/HealthyLifestyle";
@@ -16,6 +17,7 @@ export default function Home() {
       <OurServices />
       <VideoSection />
       <HappyHistory />
+      <AboutUs />
 
       <div className="py-40" />
     </main>
