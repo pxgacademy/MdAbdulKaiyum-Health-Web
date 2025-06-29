@@ -14,17 +14,21 @@ declare global {
 
 const FacebookPageEmbed = () => {
   useEffect(() => {
-    if (window.FB) {
-      window.FB.XFBML.parse();
-    } else {
-      const script = document.createElement("script");
-      script.src = process.env.NEXT_PUBLIC_FB_SCRIPT_SRC as string;
-      script.async = true;
-      script.crossOrigin = "anonymous";
-      script.onload = () => {
-        if (window.FB) window.FB.XFBML.parse();
-      };
-      document.body.appendChild(script);
+    if (typeof window !== "undefined") {
+      if (window.FB) {
+        window.FB.XFBML.parse();
+      } else {
+        const script = document.createElement("script");
+        script.src =
+          process.env.NEXT_PUBLIC_FB_SCRIPT_SRC ??
+          "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0";
+        script.async = true;
+        script.crossOrigin = "anonymous";
+        script.onload = () => {
+          if (window.FB) window.FB.XFBML.parse();
+        };
+        document.body.appendChild(script);
+      }
     }
   }, []);
 
