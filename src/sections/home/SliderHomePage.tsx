@@ -6,7 +6,7 @@ import { Carousel } from "react-responsive-carousel";
 
 const SliderHomePage = () => {
   return (
-    <section className="pt-20">
+    <section className="pt-20" id="home">
       <img src="/slider/banner.jpg" />
       <Carousel
         autoPlay={true}

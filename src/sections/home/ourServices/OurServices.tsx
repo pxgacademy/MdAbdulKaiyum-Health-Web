@@ -13,7 +13,7 @@ const OurServices = () => {
   };
 
   return (
-    <SectionContainer>
+    <SectionContainer id="our_services">
       <SectionTitle>
         আমাদের সেবা সমূহ
         <svg

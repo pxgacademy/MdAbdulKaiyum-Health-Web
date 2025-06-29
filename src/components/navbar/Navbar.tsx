@@ -14,12 +14,12 @@ interface DemoUser {
 }
 
 const navItems = [
-  { href: "/", label: "হোম", alt: "home" },
-  { href: "/", label: "সেবা", alt: "our_services" },
-  { href: "/", label: "রিভিউ", alt: "review" },
-  { href: "/", label: "আমাদের সম্পর্কে", alt: "about_us" },
-  { href: "/", label: "যোগাযোগ", alt: "contact_us" },
-  { href: "/", label: "FAQ", alt: "faq" },
+  { href: "/#home", label: "হোম", alt: "home" },
+  { href: "/#our_services", label: "সেবা", alt: "our_services" },
+  { href: "/#review", label: "রিভিউ", alt: "review" },
+  { href: "/#about_us", label: "আমাদের সম্পর্কে", alt: "about_us" },
+  { href: "/#contact_us", label: "যোগাযোগ", alt: "contact_us" },
+  { href: "/#faq", label: "FAQ", alt: "faq" },
 ];
 
 const Navbar = () => {
@@ -27,12 +27,17 @@ const Navbar = () => {
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const { user } = useAuthStore();
+  const [hash, setHash] = useState(window?.location?.hash || "home");
 
   const demoUser: DemoUser = user || {
     name: "demo name",
     email: "demo@mail.com",
     password: "",
   };
+
+  useEffect(() => {
+    setHash(window?.location?.hash);
+  }, [window?.location?.hash]);
 
   useEffect(() => {
     const controlNavbar = () => {
@@ -76,7 +81,7 @@ const Navbar = () => {
               key={item.alt}
               href={item.href}
               className={`font-bangla ${
-                pathname.includes(item.alt) && "font-bold text-blue-600"
+                hash.includes(`#${item.alt}`) && "font-bold text-blue-600"
               }
           `}
             >

@@ -2,7 +2,7 @@ import SectionTitle from "@/components/SectionTitle";
 
 const AboutUs = () => {
   return (
-    <section className="mt-20">
+    <section className="mt-20" id="about_us">
       <SectionTitle>আমাদের সম্পর্কে</SectionTitle>
 
       <div className="md:w-1/2 mx-auto mt-8">

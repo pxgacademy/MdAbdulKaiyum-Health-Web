@@ -1,3 +1,4 @@
+import LocationMap from "@/components/LocationMap";
 import AboutUs from "@/sections/home/AboutUs";
 import AppointmentAd from "@/sections/home/AppointmentAd";
 import BookAppointment from "@/sections/home/BookAppointment";
@@ -20,6 +21,7 @@ export default function Home() {
       <AboutUs />
       <BookAppointment />
       <SearchUs />
+      <LocationMap />
 
       <div className="py-40" />
     </main>

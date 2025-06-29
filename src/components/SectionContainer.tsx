@@ -4,15 +4,17 @@ interface Props {
   children: ReactNode;
   className?: string;
   marginTop?: string;
+  id?: string;
 }
 
 const SectionContainer = ({
   children,
   className = "",
   marginTop = "mt-20",
+  id,
 }: Props) => {
   return (
-    <section className={`container mx-auto ${className} ${marginTop}`}>
+    <section id={id} className={`container mx-auto ${className} ${marginTop}`}>
       {children}
     </section>
   );

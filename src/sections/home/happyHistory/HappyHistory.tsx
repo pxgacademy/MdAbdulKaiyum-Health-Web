@@ -7,7 +7,7 @@ import SectionTitle from "@/components/SectionTitle";
 
 const HappyHistory = () => {
   return (
-    <SectionContainer>
+    <SectionContainer id="review">
       <SectionTitle>সুখী হওয়ার গল্প</SectionTitle>
       <Swiper className="mt-8 shadow-lg">
         {histories?.map((history, i) => (
